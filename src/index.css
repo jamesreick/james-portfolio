@@ -132,12 +132,12 @@
 
 @media all and (max-width: 480px) {
   .navbar{
-    left: -80%;
+    left: -75%;
     width: 90%;
   }
 
   .hamburger{
-    padding: 40px 0px;
+    padding: 40px 7px;
   }
 }
 
@@ -352,47 +352,47 @@
 
 @media all and (max-width: 480px) { 
   .home p{
-    font-size: 22px;
+    font-size: 18px;
     padding: 20px;
     padding-left: 0;
-    margin-left: 7%;
+    margin-left: 15%;
   }
   .home p:nth-child(1) {
     padding-top: 40px;
   }
   .home p:nth-child(2) {
-    margin-left: 10%;
+    margin-left: 17%;
   }
   .home p:nth-child(3) {
-    margin-left: 12%;
+    margin-left: 19%;
   }
   .home p:nth-child(5) {
-    margin-left: 12%;
-    margin-top: 60%;
+    margin-left: 19%;
+    margin-top: 63%;
   }
   .home h1{
     font-size: 55px;
-    margin-left: 15%;
+    margin-left: 22%;
   }
   .home h1 span:nth-child(3){
     left: 97px;
     top: 69px;
   }
   .home p:nth-child(6) {
-    margin-left: 12%;
+    margin-left: 22%;
   }
   .home h2{
     font-size: 15px;
     padding: 12px;
-    margin-left: 12%;
+    margin-left: 22%;
   }
   .home p:nth-child(8) {
-    margin-left: 12%;
+    margin-left: 22%;
     padding: 0;
   }
   .btn41-43 {
     font-size: 15px;
-    margin-left: 10%;
+    margin-left: 18%;
     margin-top: 7%;
   }
 }
