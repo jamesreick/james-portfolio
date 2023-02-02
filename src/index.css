@@ -9,19 +9,22 @@
 /*Navbar */
 .hamburger{
   float: right;
-  padding: 60px 80px;
+  padding: 60px 45px;
   color: #ffffff;
 }
 .navbar{
   height: 100%;
   width: 30%;
-  left: -20%;
+  left: -25%;
   position: fixed; 
-  z-index: 1; 
+  z-index: 3; 
   top: 0; 
   background-color:#1d1d1d;  
   box-shadow:5px 0px 25px rgb(17, 17, 17);
   transition: all 0.5s ease-out;
+}
+#sidebar.active .links{
+  opacity: 100%;
 }
 #sidebar.active{
   left: 0%;
@@ -30,19 +33,21 @@
   color: #008cff;
 }
 .navbar .links {
+  opacity: 0%;
   color: #232323;
   display: flex; 
   flex-direction: column;
   align-items: center;
   margin-top: 40%;
   font-size: 50px;
-  z-index: 1;
+  z-index: 3;
   font-family: "Quicksand";
+  transition: all 1s ease-out;
 }
 .navbar a {
   color: #333;
   text-decoration: none;
-  padding: 60px;
+  padding: 50px;
 }
 .navbar a:hover {
   transition: .5s ease; 
@@ -86,6 +91,55 @@
   transform: scale3d(1, 1, 1);
   }
   }
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+  .navbar{
+    left: -20%;
+  }
+
+  .hamburger{
+    padding: 60px 30px;
+  }
+  .navbar .links {
+    margin-left: 30%;
+  }
+
+  }
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+  .navbar{
+    left: -22%;
+  }
+
+  .hamburger{
+    padding: 40px 15px;
+  }
+  .navbar .links {
+    font-size: 35px;
+    margin-left: 25%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) { 
+  .navbar{
+    left: -22%;
+  }
+
+  .hamburger{
+    padding: 40px 5px;
+  }
+
+}
+
+@media all and (max-width: 480px) {
+  .navbar{
+    left: -80%;
+    width: 90%;
+  }
+
+  .hamburger{
+    padding: 40px 0px;
+  }
+}
 
   /*Home*/
   .home{
@@ -197,7 +251,187 @@
   .btn-41:active {
     top: 2px;
   }
+
+/* Home media query*/
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+  .home p{
+    font-size: 25px;;
+    padding: 20px;
+    margin-left: 10%;
+  }
+  .home p:nth-child(1) {
+    padding-top: 60px;
+  }
+  .home p:nth-child(2) {
+    margin-left: 15%;
+  }
+  .home p:nth-child(3) {
+    margin-left: 18%;
+  }
+  .home p:nth-child(5) {
+    margin-left: 18%;
+    margin-top: 28%;
+  }
+  .home h1{
+    font-size: 80px;
+    margin-left: 23%;
+  }
+  .home h1 span:nth-child(3){
+    left: 145px;
+    top: 100px;
+  }
+  .home p:nth-child(6) {
+    margin-left: 18%;
+  }
+  .home h2{
+    font-size: 18px;
+    padding: 12px;
+    margin-left: 20%;
+  }
+  .home p:nth-child(8) {
+    margin-left: 20%;
+    padding: 0;
+  }
+  .btn41-43 {
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 7%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  .home p{
+    font-size: 25px;
+    padding: 15px;
+    padding-left: 0;
+    margin-left: 10%;
+  }
+  .home p:nth-child(1) {
+    padding-top: 60px;
+  }
+  .home p:nth-child(2) {
+    margin-left: 15%;
+  }
+  .home p:nth-child(3) {
+    margin-left: 18%;
+  }
+  .home p:nth-child(5) {
+    margin-left: 18%;
+    margin-top: 30%;
+  }
+  .home h1{
+    font-size: 65px;
+    margin-left: 21%;
+  }
+  .home h1 span:nth-child(3){
+    left: 115px;
+    top: 81px;
+  }
+  .home p:nth-child(6) {
+    margin-left: 18%;
+  }
+  .home h2{
+    font-size: 18px;
+    padding: 12px;
+    margin-left: 18%;
+  }
+  .home p:nth-child(8) {
+    margin-left: 18%;
+    padding: 0;
+  }
+  .btn41-43 {
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 7%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) { 
   
+}
+
+@media all and (max-width: 480px) { 
+  .home p{
+    font-size: 22px;
+    padding: 20px;
+    padding-left: 0;
+    margin-left: 7%;
+  }
+  .home p:nth-child(1) {
+    padding-top: 40px;
+  }
+  .home p:nth-child(2) {
+    margin-left: 10%;
+  }
+  .home p:nth-child(3) {
+    margin-left: 12%;
+  }
+  .home p:nth-child(5) {
+    margin-left: 12%;
+    margin-top: 60%;
+  }
+  .home h1{
+    font-size: 55px;
+    margin-left: 15%;
+  }
+  .home h1 span:nth-child(3){
+    left: 97px;
+    top: 69px;
+  }
+  .home p:nth-child(6) {
+    margin-left: 12%;
+  }
+  .home h2{
+    font-size: 15px;
+    padding: 12px;
+    margin-left: 12%;
+  }
+  .home p:nth-child(8) {
+    margin-left: 12%;
+    padding: 0;
+  }
+  .btn41-43 {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 7%;
+  }
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation:landscape) { /* Landscape styles here */ }
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+} 
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+}
 
   
 
